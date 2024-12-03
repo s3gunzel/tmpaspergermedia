@@ -1,0 +1,25 @@
+---
+title: News and Updates
+permalink: /blog
+layout: default
+---
+<section class="mini-hero">
+    <div class="container-full">
+        <h1>
+            Our Blog - News and Updates - See What We're Up To
+        </h1>
+    </div>
+</section>
+<section class="blog-categories">
+    &nbsp;
+</section>
+<section class="blog-articles-recent"> 
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+  </ul>
+</section>

@@ -1,0 +1,409 @@
+/*
+    Asperger Media Pty Ltd - Website Stylesheet
+    Copyright © 2024 - Asperger Media Pty Ltd
+*/
+
+@font-face{
+    font-family: "Open Sans";
+    src: url("/static/webfonts/open-sans.ttf");
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src: url("/static/webfonts/open-sans-italic.ttf");
+    font-style: italic;
+}
+
+@font-face{
+    font-family: "Century-Gothic";
+    src: url("/static/webfonts/century-gothic.woff");
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Century-Gothic";
+    src: url("/static/webfonts/century-gothic-bold.woff");
+    font-weight: bold;
+}
+
+.container-flex{
+    width: 98%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-full{
+    width: 98%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body header{
+    height: 90px;
+    z-index: -1;
+}
+
+body header #contact-bar{
+    height: 30px;
+    background-color: #222222;
+    width: 100%;
+}
+
+body header #contact-bar ul{
+    height: 30px;
+    margin-top:0px;
+}
+
+body header #contact-bar ul#quick-links{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -37px;
+}
+
+body header #contact-bar ul#quick-links li{
+    width: 25px;
+    height: 25px;
+    margin-top:2px;
+    list-style-type: none;   
+}
+
+body header #contact-bar ul#quick-links li:not(:last-child){
+    margin-right: 10px;
+}
+
+body header #contact-bar ul#quick-links li#fb-brand{
+    background:url("/static/img/fa/facebook-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body header #contact-bar ul#quick-links li#ms-brand{
+    background:url("/static/img/fa/facebook-messenger-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body header #contact-bar ul#quick-links li#lk-brand{
+    background:url("/static/img/fa/linkedin-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body header #contact-bar ul#quick-links li a{
+    text-decoration: none;
+    height: 25px;
+    width: 25px;
+    display: block;
+}
+
+body header #contact-bar ul#contact-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+body header #contact-bar ul#contact-links li{
+    height: 25px;
+    margin-top:2px;
+    list-style-type: none;
+}
+
+body header #contact-bar ul#contact-links li:not(:last-child){
+    margin-right: 15px;
+}
+
+body header #contact-bar ul#contact-links li#phone{
+    background:url("/static/img/fa/phone-alt-solid.png") left no-repeat;
+    background-size: contain;
+}
+
+body header #contact-bar ul#contact-links li#email{
+    background:url("/static/img/fa/envelope-solid.png") left no-repeat;
+    background-size: contain;
+}
+
+body header #contact-bar ul#contact-links li a{
+    text-decoration: none;
+    height: 25px;
+    display: block;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    margin-left: 30px;
+    margin-top: -2px;
+}
+
+body header nav{
+    background-color: #3100BD;
+    width: 100%;
+    height: 60px;
+}
+
+body header nav.fixed{
+    position: fixed;
+    margin-top: -30px;
+}
+
+body header nav #logo{
+    background:url("/static/img/aspergermediawhite.webp") center center no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 60px;
+}
+
+body header nav #logo a{
+    text-decoration: none;
+    width: 150px;
+    height: 60px;
+    display: block;
+}
+
+body header nav ul#nav-actual{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0;
+}
+
+body header nav ul#nav-actual li{
+    height: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+
+body header nav ul#nav-actual li:hover{
+    background-color: #4301FF;
+}
+
+body header nav ul#nav-actual li a{
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Century-Gothic', sans-serif;
+    font-size: 13pt;
+}
+
+body header nav ul#nav-actual li ul.sub-menu{
+    display: none;
+}
+
+body header nav ul#nav-actual li:hover ul.sub-menu{
+    display: block;
+    float: left;
+    position: absolute;
+    border: 1px solid #4301FF;
+    margin-left: -10px;
+    width: 200px;
+}
+
+body header nav ul#nav-actual li ul.sub-menu li{
+    margin-left:-40px;
+    background-color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+body header nav ul#nav-actual li ul.sub-menu li:not(:last-child){
+    border-bottom: 1px solid #aaa;
+}
+
+body header nav ul#nav-actual li ul.sub-menu li a{
+    color: #000;
+    width: 230px;
+    height: 61px;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body header nav ul#nav-actual li ul.sub-menu li a:hover{
+    background-color: #4301FF;
+    color: #fff;
+}
+
+body section{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body section.bd-muted{
+    background-color: rgba(49, 0, 189, 0.10);
+    margin-top: -10px;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    padding-bottom: 20px;
+}
+
+body section.ff{
+    padding-top: 20px;
+}
+
+body section#hero-unit{
+    height: 100%;
+    margin-top: -90px;
+    background:url("/static/img/hero-unit.webp") center center no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+body section#hero-unit h1{
+    position: relative;
+    top: 25%;
+    color: #fff;
+    font-family: 'Century-Gothic', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    font-size: 25pt;
+}
+
+body section.mini-hero{
+    background:url("/static/img/hero-unit.webp") center center no-repeat;
+    background-size: cover;
+    height: 80px;
+    display:inline-table;
+    vertical-align: middle;
+    width: 100%;
+}
+
+body section.mini-hero h1{
+    font-family: 'Century-Gothic', sans-serif;
+    color: #fff;
+    text-transform: lowercase;
+}
+
+body section h2{
+    text-align: center;
+    font-family: 'Century-Gothic', sans-serif;
+}
+
+body section p.subtitle{
+    text-align: center;
+}
+
+body section p.subtitle:not(:nth-of-type(1)){
+    margin-top: -15px;
+}
+
+
+body section iframe{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+body section .sectioned-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body section .sectioned-grid .grid-section{
+    max-width: 49%;
+
+}
+
+body section .sectioned-grid .grid-section h3{
+    text-align: left;
+    font-family: 'Century-Gothic', sans-serif;
+}
+
+body section .sectioned-grid .grid-section p{
+    margin-top: -10px;
+}
+
+body section .sectioned-grid .grid-section p.timeframe{
+    font-weight: bold;
+}
+
+body footer{
+    width: 100%;
+}
+
+body footer #footer-hasbg{
+    background-color: #3100BD;
+    width: 100%;
+    border-bottom: 1px solid #4301FF;
+}
+
+body footer #footer-nobg{
+    background-color: #fff;
+    border-bottom: 1px solid #4301FF;
+}
+
+body footer #footer-nobg #footer-copyright{
+    width: 60%;
+}
+
+body footer #footer-nobg #footer-copyright p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #222;
+    padding-top: 5px;
+}
+
+body footer #footer-nobg #footer-socials{
+    width: 40%;
+}
+
+body footer #footer-nobg #footer-socials ul{
+    display:flex;
+    justify-content: flex-end;
+}
+
+body footer #footer-nobg #footer-socials ul li{
+    width: 25px;
+    height: 25px;
+    border: 5px solid #3100BD;
+    list-style-type: none;
+}
+
+body footer #footer-nobg #footer-socials ul li#fb{
+    background: #3100bd url("/static/img/fa/facebook-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body footer #footer-nobg #footer-socials ul li#ms{
+    background: #3100bd url("/static/img/fa/facebook-messenger-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body footer #footer-nobg #footer-socials ul li#li{
+    background: #3100bd url("/static/img/fa/linkedin-brands.png") center center no-repeat;
+    background-size: contain;
+}
+
+body footer #footer-nobg #footer-socials ul li#ph{
+    background: #3100bd url("/static/img/fa/phone-alt-solid.png") center center no-repeat;
+    background-size: contain;
+}
+
+body footer #footer-nobg #footer-socials ul li#em{
+    background: #3100bd url("/static/img/fa/envelope-solid.png") center center no-repeat;
+    background-size: contain;
+}
+
+body footer #footer-nobg #footer-socials ul li a{
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    display: block;
+}
+
+body footer #footer-nobg #footer-socials ul li:not(:last-child){
+    margin-right: 10px;
+}

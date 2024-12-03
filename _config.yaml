@@ -1,0 +1,8 @@
+name: Asperger Media
+markdown: kramdown
+permalink: /blog/:title
+timezone: '+1100'
+collections:
+  testimonial: 
+    output: true
+    sort_by: order
