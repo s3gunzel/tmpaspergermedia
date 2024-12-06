@@ -340,6 +340,12 @@ body footer #footer-hasbg{
     border-bottom: 1px solid #4301FF;
 }
 
+body footer #footer-hasbg dl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 body footer #footer-nobg{
     background-color: #fff;
     border-bottom: 1px solid #4301FF;
