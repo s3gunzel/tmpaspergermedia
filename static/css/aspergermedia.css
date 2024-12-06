@@ -297,7 +297,6 @@ body section p.subtitle:not(:nth-of-type(1)){
     margin-top: -15px;
 }
 
-
 body section iframe{
     width: 100%;
     max-width: 1140px;
